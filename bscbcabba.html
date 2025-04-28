@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #containor{
+        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    } 
+    .flex{
+        
+        background-color: rgb(126, 120, 126);
+        justify-content:center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+    }
+    h2{
+        text-align: center;
+        color: rgb(230, 17, 116);
+    }
+    img{
+        border-radius: 15px;
+    }
+    h1{
+        text-align: center;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Creative Techno College</h1>
+    <div id="containor" >
+        <div class="flex" style="border: 2px solid;" onclick="BSC()">
+            <img onclick="BSC()" src="./Basic-Computer-Application.jpg" height="200px" alt="">
+            <h2  onclick="BSC()" >BSC</h2>
+        </div>
+        <div class="flex" style="border: 2px solid;" onclick="BCA()">
+            <img onclick="BCA()" src="./cs3.jpg" height="195px" alt="">
+            <h2 onclick="BCA()">BCA</h2>
+        </div>
+        <div class="flex" style="border: 2px solid;" onclick="BBA()">
+            <img src="./Business-Application.jpg" height="200px" alt="">
+            <h2>BBA</h2>
+        </div>
+    </div>
+    <script>
+        function BSC(){
+            window.location.assign('https://creativecollege.in/Result/BSC.php');
+        }
+        function BCA(){
+            window.location.assign('https://creativecollege.in/Result/BCA.php');
+        }
+        function BBA(){
+            window.location.assign('https://creativecollege.in/Result/BBA.php');
+        }
+    </script>
+</body>
+</html>
